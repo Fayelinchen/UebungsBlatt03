@@ -2,7 +2,7 @@
 
 int main(void) 
 {
-	double a,b;
+	char a,b;
 	int c;
 	printf("Geben sie zwei ACSII-Zeichen ein:\n");
 	c = scanf("%c%c", &a, &b);
