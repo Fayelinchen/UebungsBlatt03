@@ -6,7 +6,7 @@ int main(void)
 	int c;
 	printf("Geben sie zwei nichtnegative Dezimalzahlen getrennt durch ein Leerzeichen ein:\n");
 	c = scanf("%f %f", &a, &b);
-	if (c != 2 || ((a < 0) && (b < 0)) || getchar() != '\n') {
+	if (c != 2 || (a < 0) || (b < 0) || getchar() != '\n') {
 		printf("Eingabe ist ungültig\n");
 		return 1;
 	}
