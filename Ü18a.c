@@ -21,7 +21,8 @@ int read_alpha()
 	printf("Geben Sie einen Kleinbuchstaben ein: ");
 	status = scanf("%c", &alpha);
 	if (status != 1 ||  getchar() != '\n' || islower(alpha) == 0) {
-		while (getchar() != '\n') {}
+		fflush(stdin);
+		/*while (getchar() != '\n') {}*/
 		return 0;
 		}
 	return alpha;
